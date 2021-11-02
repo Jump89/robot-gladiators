@@ -1,0 +1,1 @@
+window.alert("this an alert. to see if JavaScript is running")
