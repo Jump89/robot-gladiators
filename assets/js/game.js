@@ -69,6 +69,7 @@ else {
 }
 window.alert(playerName + " has chosen to skip the fight!");
 }
+// if player does not chose ether 1 or 2 in promt
 else {
     window.alert("You need to chose a valid option. Try Again!")
 }
