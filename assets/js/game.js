@@ -1,9 +1,3 @@
-
-/*var enemyNames = ['Roborto', 'Amy Android', 'Robo Trumble'];
-var enemyHealth = Math.floor(Math.random() * 21) + 40;
-var enemyAttack = 12;*/
-
-
 // function to generate a random numeric value
 var randomNumber = function(min,max) {
   var value = Math.floor(Math.random() * (max - min + 1) + min);
@@ -94,7 +88,7 @@ var startGame = function() {
         // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
         fight(pickedEnemyObj);
         //if we're not at the last enemy in array 
-        if (playerInfo.health > 0 && i < enemyName.length - 1) {
+        if (playerInfo.health > 0 && i < enemyInfo.length - 1) {
           //ask if player wants to use the store before next round
           var storeConfirm = window.confirm("The fight is over , visit the store before the next round ");
           //if yes , take them to the store() function
@@ -167,7 +161,7 @@ var shop = function() {
 var playerInfo= {
   name: window.prompt("What is your robot's name?"),
   health: 100,
-  attack: 10,
+  attack: 50,
   money: 10,
   reset: function(){
     this.health = 100;
